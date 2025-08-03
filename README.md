@@ -84,8 +84,7 @@ max_history	5	Conversation memory
 
 ``` text
 doc-talk/
-├── app.py                # Main application
-├── .env.example          # Environment template
+├── app.py                # Main application        
 └── requirements.txt      # Dependencies
 ```
 
