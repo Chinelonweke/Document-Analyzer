@@ -27,8 +27,7 @@ Python 3.9+
 ```
 ### 2. Installation
 ```bash
-git clone https://github.com/your-repo/doc-talk.git
-cd doc-talk
+git clonehttps://github.com/Chinelonweke/Document-Analyzer.git
 pip install -r requirements.txt
 ```
 
