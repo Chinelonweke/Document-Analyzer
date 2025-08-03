@@ -24,3 +24,9 @@
 ### 1. Prerequisites
 ```bash
 Python 3.9+
+
+ ###2. Installation
+```bash
+git clone https://github.com/your-repo/doc-talk.git
+cd doc-talk
+pip install -r requirements.txt
