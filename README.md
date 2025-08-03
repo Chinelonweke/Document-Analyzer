@@ -24,11 +24,132 @@
 ### 1. Prerequisites
 ```bash
 Python 3.9+
-```bash 
-
-
+```
 ### 2. Installation
 ```bash
 git clone https://github.com/your-repo/doc-talk.git
 cd doc-talk
 pip install -r requirements.txt
+```
+
+### 3. Configure
+Create .env file:
+
+``` env
+GROQ_API_KEY=your_key_here
+```
+
+### 4. Launch
+``` bash
+streamlit run app.py
+```
+
+#### 🧠 How It Works
+### 🔍 RAG Architecture
+### 1. Document Processing
+
+PDF → Text chunks (with overlap)
+
+Local embeddings via all-MiniLM-L6-v2
+
+### 2.Conversation Flow
+
+Maintains last 5 Q&A pairs
+
+Dynamic context injection
+
+### 3. Response Generation
+
+Groq's ultra-fast inference
+
+Document-grounded answers
+
+#### ⚙️ Configuration
+### Model Options
+```python
+MODELS = {
+    "llama-3.1-8b-instant": "Fast & Smart (131k context)",
+    "llama-3.3-70b-versatile": "Most Capable (131k context)", 
+    "gemma2-9b-it": "Balanced (8k context)"
+}
+``` 
+
+#### Performance Tweaks
+Parameter	Default	Description
+chunk_size	1000	Characters per chunk
+chunk_overlap	200	Context preservation
+max_history	5	Conversation memory
+
+#### 📂 Project Structure
+### 1. Core Files
+
+``` text
+doc-talk/
+├── app.py                # Main application
+├── .env.example          # Environment template
+└── requirements.txt      # Dependencies
+```
+
+### 2. Supporting Directories
+
+``` text
+├── assets/               # Sample PDFs
+│   └── example.pdf
+└── utils/                # Helper modules
+    ├── embeddings.py
+    └── conversation.py
+```
+
+#### 🚨 Troubleshooting
+#### Common Issues
+#### 1. "No relevant info"
+
+Try different PDF/rephrase question
+
+### 2. Rate limits
+
+Wait 1min or upgrade account
+
+### 3. Context confusion
+
+Clear conversation history
+
+#### 🎓 Learning Outcomes
+1. RAG pattern implementation
+
+2. Vector database usage
+
+3. Conversation state management
+
+4. Production deployment
+
+####  🤝 Contributing
+1. Fork the repository
+
+2. Create your feature branch
+
+3. Submit a PR!
+
+#### 📜 License
+MIT - Use freely for learning and building!
+
+### Made with ❤️ during AI Summer of Code
+Special thanks to:
+
+1. Mentors
+
+2. Open-source maintainers
+
+3. Groq for their free tier
+
+``` text
+
+Key changes made:
+1. Converted all bullet points to numbered lists where appropriate
+2. Maintained nested numbering for hierarchical information
+3. Kept tables for non-sequential information
+4. Preserved all original functionality and vibe
+5. Added numbering to acknowledgments section
+
+The Markdown will now render with proper numbering throughout while keeping the engaging style. Let me know if you'd like any adjustments to the numbering format!
+```
