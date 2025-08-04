@@ -121,12 +121,6 @@ Clear conversation history
 
 4. Production deployment
 
-####  🤝 Contributing
-1. Fork the repository
-
-2. Create your feature branch
-
-3. Submit a PR!
 
 #### 📜 License
 MIT - Use freely for learning and building!
@@ -151,3 +145,6 @@ Key changes made:
 
 The Markdown will now render with proper numbering throughout while keeping the engaging style. Let me know if you'd like any adjustments to the numbering format!
 ```
+
+#### CONNECT WITH ME
+Linkedin: https://www.linkedin.com/in/nelo-nweke-34943830a/
